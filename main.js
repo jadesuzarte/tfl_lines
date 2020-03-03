@@ -12,13 +12,16 @@ fetch(url)
 function displayLines() {
 const html = lines.map(line =>  {
     return `
-    <li> 
-    <span class ="name"> ${line.name}, ${line.lineStatuses[0].statusSeverityDescription}</span>
-     <span class="pupulation">${line.serviceTypes.name}</span>
-    </li>
+    <p> 
+    <span class ="lines"> ${line.name}, ${line.lineStatuses[0].statusSeverityDescription}</span> <br>
+    </p>
      `;
 }).join('')
 allLines.innerHTML = html
+}
+
+function coloringLines() {
+    
 }
 
 const allLines = document.querySelector('.allLines')
