@@ -21,9 +21,12 @@ allLines.innerHTML = html
 }
 
 function coloringLines() {
-    
+    if(colors.includes('Bakerloo')) {
+       return colors.classList.add('.bakerloo')
+    }
 }
 
+const colors = document.querySelectorAll('.lines')
 const allLines = document.querySelector('.allLines')
-
 allLines.addEventListener('click', displayLines);
+colors.addEventListener('click', coloringLines);
