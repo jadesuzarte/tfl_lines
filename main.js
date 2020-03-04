@@ -18,15 +18,10 @@ const html = lines.map(line =>  {
      `;
 }).join('')
 allLines.innerHTML = html
+button.classList.remove('.button')
 }
+window.onload = displayLines;
 
-function coloringLines() {
-    if(colors.includes('Bakerloo')) {
-       return colors.classList.add('.bakerloo')
-    }
-}
-
-const colors = document.querySelectorAll('.lines')
 const allLines = document.querySelector('.allLines')
-allLines.addEventListener('click', displayLines);
-colors.addEventListener('click', coloringLines);
+const button = document.querySelector('.button')
+button.addEventListener('click', displayLines);
