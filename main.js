@@ -18,8 +18,8 @@ const html = lines.map(line =>  {
      `;
 }).join('')
 allLines.innerHTML = html
-button.classList.remove('.button')
 }
+
 window.onload = displayLines;
 
 const allLines = document.querySelector('.allLines')
