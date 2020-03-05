@@ -16,9 +16,13 @@ fetch(url)
 
     html = lines.map(line =>  {
         return `
+        <div class ="container">
         <p> 
-        <span class ="lines"> ${line.name} -> ${line.lineStatuses[0].statusSeverityDescription}</span> <br>
+        <span class ="lines"> ${line.name} 🚅 ${line.lineStatuses[0].statusSeverityDescription}</span> <br>
+        <span class="colors"> 
+        <img src="" alt="">
         </p>
+        </div>
          `;
     }).join('')
 
