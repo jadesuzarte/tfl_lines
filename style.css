@@ -31,6 +31,11 @@ span.lines {
     justify-content: space-between;
     text-transform: capitalize;
   }
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .container {
     position: relative;
     margin:20px;
